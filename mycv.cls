@@ -6,8 +6,17 @@
 \RequirePackage{titlesec}						   % title formating pkg
 \RequirePackage[letterpaper,margin=2cm]{geometry}  % Margins adjustment
 \RequirePackage[utf8]{inputenc}
+\RequirePackage{fancyhdr}
 
-\usepackage[utf8]{inputenc}
+%Header & Footer
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\cfoot{}
+\rfoot{Page~\thepage}
+\lfoot{\today}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
 %\RequirePackage[english]{babel}
 %\renewcommand{\baselinestretch}{.5}
 
