@@ -1,7 +1,7 @@
 
 \LoadClass[10pt,letterpaper]{article}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mycv}[2017/12/10 CV class]
+\ProvidesClass{mycv}[2019/07/24 CV class]
 
 \RequirePackage{titlesec}						   % title formating pkg
 \RequirePackage[letterpaper,margin=2cm]{geometry}  % Margins adjustment
@@ -33,8 +33,27 @@
   {}{0em}
   {}
 
+\titleformat{\subsubsection}
+{\normalsize\raggedright}
+{}{0em}
+{}
 
-\newcommand{\datedsubsection}[2]{%
+
+\titleformat{\subsubsection}
+{\normalsize\raggedright}
+{}{0em}
+{}
+
+
+\newcommand{\worksubsection}[4]{
+	\subsection[#1]{#1}
+	\subsection[#2]{#2}
+	\subsubsection[#3]{#3}
+	\subsubsection[#4]{#4}
+}
+
+
+\newcommand{\datedsubsection}[2]{
 	\subsection[#1]{#1 \hfill #2}%
 }
 
