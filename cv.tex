@@ -42,26 +42,29 @@
 {\textbullet~Contracted Researcher \hspace{1cm}  @ \hspace{0.02cm} Energy Analytics and Forecasting Unit \hfill \textbf{ \ July 2018 -- Present\ }}
 
 
+
 \vspace{0.4cm}
 
 \section{Key Skills}
 
-\begin{itemize}[itemsep=5px]
+\begin{itemize}
 	
 	\item \textbf{Natural Languages}: Portuguese and English proficient
 	
-	\item \textbf{Programming Languages}: Python (advanced); \LaTeX (intermediate); JavaScript, GoLang (home projects); R, MATLAB, C, C++ (academic)
-	
+	\item \textbf{Programming Languages}: 
 	\begin{itemize}
-		\item \textbf{Daily drivers}: pandas, numpy, scikit-learn, tensorflow, keras, seaborn, dash \& plotly, sphinx
-	\end{itemize}
-	
+		\item \textbf{Advanced:} Python (scikit-learn, pandas, numpy, statsmodels, tensorflow, seaborn, dash \& plotly, Pulp, Sphinx, Docker SDK, Flask, Django-REST Framework, Celery, pytest, loguru)
+		\item \textbf{Intermediate:} JavaScript (VueJS), Tex (\LaTeX)
+		\item \textbf{Basic:} GoLang, R, MATLAB, C, C++
+	\end{itemize}			
 	
 	\item \textbf{Databases}: PostgreSQL (+TimescaleDB), Apache Cassandra, SQLite
 	
-	\item \textbf{Version control}: Git, GitHub/GitLab
+	\item \textbf{Version control}: Git, GitHub/GitLab (CI/CD)
 	
-	\item \textbf{App/Web Servers/Message Brokers}: NGINX, Apache, Flask, Django-REST Framework, RabbitMQ
+	\item \textbf{Web Servers}: NGINX, Apache HTTP Webserver
+	
+		\item \textbf{Message Brokers/Event Streaming}: RabbitMQ, Apache Kafka
 	
 	\item \textbf{Virtualization}: Docker (containerization), Oracle VM VirtualBox
 	
@@ -102,19 +105,37 @@ Monthly award that honors collaborators for an exceptional contribution in his/h
 \section{Publications}
 
 
+\subsection{Journals}
 
 \begin{enumerate}
+
+	\item Andrade et al., "Data-driven anomaly detection and event log profiling of SCADA alarms,", under review, IEEE Transactions on Power Systems.
 		
 	\item Andrade, J.; Bessa, R. (2017). Improving renewable energy forecasting with a grid of
 	numerical weather predictions. IEEE Trans. Sustain. Energy 2017, 8, 1571–1580.
 	
 	\item Andrade, J.; Filipe, J.; Reis, M.; and Bessa, R. (2017). Probabilistic Price Forecasting for Day-Ahead and Intraday Markets: Beyond the Statistical Model. Sustainability, vol. 9, no. 11, p. 1990, Oct. 2017.
 	
-	\item R.J. Bessa, D. Rua, C. Abreu, P. Machado, J.R. Andrade, R. Pinto, C. Gonçalves, and M. Reis, "Data economy for prosumers in a smart grid ecosystem," in Proc. of the e-Energy ’18: The Nineth International Conference on Future Energy Systems, June 12–15, 2018, Karlsruhe, Germany.
-	
-	\item A. Coronati, J.R. Andrade , R.J. Bessa, "A deep learning method for forecasting residual market curves," In Press, 2020.
+	\item A. Coronati, J.R. Andrade, R.J. Bessa, "A deep learning method for forecasting residual market curves," Electric Power Systems Research, vol. 190, pp. 106756, Jan. 2021.
 	
 \end{enumerate}
+
+
+\subsection{International Conferences}
+
+\begin{enumerate}
+	\item B. Almeida, R.J. Santos, M. Louro, P.M. Santos, A.F. Ribeiro, R.J. Bessa, C. Gouveia, J.R. Andrade, R.E. Silva, C.N. Rocha, J.P. Viana, "Innovative applications of artificial intelligence on SCADA data," 26th International Conference \& Exhibition on Electricity Distribution (CIRED 2021), 20-23 September 2021.
+
+	\item R.J. Bessa, D. Rua, C. Abreu, P. Machado, J.R. Andrade, R. Pinto, C. Gonçalves, and M. Reis, "Data economy for prosumers in a smart grid ecosystem," in Proc. of the e-Energy ’18: The Nineth International Conference on Future Energy Systems, June 12–15, 2018, Karlsruhe, Germany.
+	
+	\item A. Coronati, J.R. Andrade, R.J. Bessa, "A deep learning method for forecasting residual market curves," in Proc. of the 21st Power Systems Computation Conference (PSCC 2020), 29 June-3 July 2020.
+	
+	\item S. Reyes, R.J. Bessa, J.R. Andrade, "Pronóstico de flujo de energía de olas," VI Congreso Nacional de Estudiantes de Energías Renovables (CNEER), Temixco, Mexico, 11-13 September 2018.
+	
+	\item C. Gonçalves, J.R. Andrade, R.J. Bessa, "Feature extraction techniques that improve wind power probabilistic forecasting," Wind Energy Science Conference 2017, Mini Symposia "Wind Power Forecasting", Technical University of Denmark, 26-29 June 2017.
+
+\end{enumerate}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Projects}
@@ -122,114 +143,71 @@ Monthly award that honors collaborators for an exceptional contribution in his/h
 	\vspace{0.15cm}	
 
 \begin{myitemize}	
-	% \vspace{0.1cm}
-	\item \textit{\textbf{InteGrid} - Demonstration of INTElligent grid technologies for renewables INTEgration and INTEractive consumer participation enabling INTEroperable market solutions and INTErconnected stakeholders}
-	
-		\vspace{0.15cm}
-		\textbf{Task:}
-		
-		\begin{itemize}[itemsep=1px]
-		\item Conceptualization, development and integration of the forecasting platform for medium and low voltage distribution networks resources (loads and renewable energy based generation sources). Development of forecasting models for daily and intraday Iberian Electricity Market (MIBEL) electricity prices.
-		\end{itemize}
-		
-		\textbf{Accomplishments:}
-		\begin{itemize}[itemsep=1px]
-			\item State-of-the-art deep-learning algorithms for short-term (up to 48 hours ahead) deterministic and probabilistic forecasting
-			\item Highly scalable forecasting platform, supported by RabbitMQ + Celery for distributed processing and data-cleansing algorithms for data preparation
-			\item External data acquisition software (i.e. numerical weather predictions) and Multi-node Cassandra cluster as core database
-			\item REST APIs for data ingestion, acquisition and extraction
-			\item Multi-service Docker container orchestration for software deployment
-			\item Publications in international conference and peer-reviewed journal
-		\end{itemize}
-		\vspace{0.2cm}
-		
-	
+
+% ------
+	\item \textit{\textbf{AI4Substation (R\&D Contract)}} - E-REDES
+	\begin{itemize}
+		\item \textbf{Task:} Conceptualization and development of data-driven decision support applications for E-REDES dispatch centre operators, based on SCADA eventlog data;
+		\item \textbf{Technologies:} Python, PostgreSQL, Flask, VueJS, Docker
+	\end{itemize}
+
+% ------
 	\vspace{0.30cm}	
-	
-	
+	\item \textit{\textbf{GPDER - Grid Predictive Management Considering Distributed Energy Resources}}
+	\begin{itemize}
+		\item \textbf{Task:} Development of a forecasting platform for MV and LV distribution networks loads;
+		\item \textbf{Technologies:} Python, Apache Cassandra, NGINX, Flask, Apache Kafka, Docker
+	\end{itemize}
 
-
-	\item \textit{\textbf{LPVAnalytics}} - Elergone Energias, Lda
-	
-		\vspace{0.15cm}
-		\textbf{Task:}
-		
-		\begin{itemize}[itemsep=1px]
-			\item Conceptualization, development and integration of an end-to-end forecasting platform for load and solar resources
-		\end{itemize}
-		
-		\vspace{0.15cm}
-		\textbf{Accomplishments:}
-		
-		\begin{itemize}[itemsep=1px]
-			\item State-of-the-art supervised learning algorithms for short-term (up to 96 hours ahead) forecasting, with an improvement of 50\% (MAE) compared to the existing forecasting methodology
-			\item Development of external data acquisition software
-			\item Development of REST APIs and graphical user interfaces for client interaction
-			\item Multi-service Docker container orchestration for software deployment
-		\end{itemize}
-
-\pagebreak
-
-	\item \textit{\textbf{FEEdBACk} - Fostering Energy Efficiency and BehAvioural Change through ICT}
-	
-		\vspace{0.15cm}
-		\textbf{Task:}
-		
-		\begin{itemize}[itemsep=1px]
-		\item Conceptualization and development of an end-to-end forecasting service for photovoltaic energy generation resources
-		\end{itemize}
-		
-		\textbf{Accomplishments:}
-		\begin{itemize}[itemsep=1px]
-			\item State-of-the-art supervised learning algorithms for short-term (up to 96 hours ahead) deterministic and probabilistic forecasting
-			\item Development of external data acquisition software (i.e. numerical weather predictions)
-			\item Development of REST APIs for client communication
-			\item Multi-service Docker container orchestration for software deployment
-		\end{itemize}
-		\vspace{0.2cm}
-		
-	
+% ------
 	\vspace{0.30cm}	
+	\item \textit{\textbf{TSOLoadForecasting (R\&D Contract)}} - Austrian Power Grid
+	\begin{itemize}
+		\item \textbf{Task:} Research of statistical learning algorithms for load forecasting with  application on APG transmission system operator assets.
+		\item \textbf{Technologies:} Python
+	\end{itemize}
 	
-	\item \textit{\textbf{SOLAR4DR}}
-	
-		\vspace{0.15cm}
-		\textbf{Task:}
-		
-		\begin{itemize}[itemsep=1px]
-			\item Development of an end-to-end forecasting service for solar energy generation resources
-		\end{itemize}
-	
-		\vspace{0.15cm}
-		\textbf{Accomplishments:}
-		
-		\begin{itemize}[itemsep=1px]
-			\item State-of-the-art supervised learning algorithms for short-term (up to 96 hours ahead) forecasting
-			\item Development of external data acquisition software (i.e. numerical weather predictions)
-			\item Development of REST APIs for client communication
-		\end{itemize}
-	
-	
-\vspace{0.15cm}	
+% ------
+	\vspace{0.30cm}	
+	\item \textit{\textbf{InteGrid (EU H2020)} - INTElligent grid technologies for renewables INTEgration and INTEractive consumer participation enabling INTEroperable market solutions and INTErconnected stakeholders}
+	\begin{itemize}
+		\item \textbf{Task:} Development and integration of a forecasting platform for MV and LV distribution networks loads and MIBEL spot electricity prices;
+		\item \textbf{Technologies:} Python, Apache Cassandra, RabbitMQ, Celery, NGINX, Docker
+	\end{itemize}
 
-	\item \textit{\textbf{CORAL} - Sustainable Ocean Exploitation: Tools and Sensors}
+\newpage
+% ------	
+	\vspace{0.30cm}	
+	\item \textit{\textbf{LPVAnalytics (R\&D Contract)}} - Elergone Energias, Lda.
+	\begin{itemize}
+		\item \textbf{Task:} Conceptualization, development and integration of an end-to-end forecasting platform for load and solar resources of Elergone Energias. System to be used by the market agent to define market offers on MIBEL.
+		\item \textbf{Technologies:} Python, VueJS, PostgreSQL(+TimescaleDB), NGINX, Docker
+	\end{itemize}
 
-		\vspace{0.15cm}
-		\textbf{Task:}
+% ------
+	\vspace{0.30cm}	
+	\item \textit{\textbf{FEEdBACk (EU H2020)} - Fostering Energy Efficiency and BehAvioural Change through ICT}
+	\begin{itemize}
+		\item \textbf{Task:} Conceptualization and development of an end-to-end forecasting service for photovoltaic energy generation resources
+		\item \textbf{Technologies:} Python, Flask, NGINX, Docker
+	\end{itemize}
+	
+% ------
+	\vspace{0.30cm}	
+	\item \textit{\textbf{SOLAR4DR (R\&D Contract)} - EFACEC}
+	\begin{itemize}
+		\item \textbf{Task:} Development of an end-to-end forecasting service for solar energy generation
+		\item \textbf{Technologies:} Python, Flask, Apache HTTP Server, Docker
+	\end{itemize}
+		
+% ------
+	\vspace{0.30cm}	
+	\item \textit{\textbf{CORAL (N2020)} - Sustainable Ocean Exploitation: Tools and Sensors}
+	\begin{itemize}
+		\item \textbf{Task:} State of art research with regard to offshore energy conversion technologies and future hybrid systems opportunities. Development of a multi-temporal energy management tool (mixed-integer linear programming) - supported by forecasting models capable to define the best operational strategy for the energy storage/consumption of envisioned maritime exploratory processes
+		\item \textbf{Technologies:} Python, Flask
+	\end{itemize}
 
-		\begin{itemize}[itemsep=1px]
-			\item Fundamental research with regard to innovative feature engineering techniques combined with state-of-art ML supervised learning algorithms applied to solar and wind energy forecast
-			\item State of art research with regard to offshore energy conversion technologies and future hybrid systems opportunities
-		\end{itemize}
-		
-		\vspace{0.15cm}
-		\textbf{Accomplishments:}
-		
-		\begin{itemize}[itemsep=1px]
-			\item Multi-temporal energy management tool (mixed-integer linear programming) - supported by forecasting algorithms capable to define the best operational strategy for the energy storage/consumption of envisioned maritime exploratory processes
-			\item Publication in international peer-reviewed journal
-		\end{itemize}
-		
 		
 \end{myitemize}
 
@@ -263,19 +241,19 @@ Monthly award that honors collaborators for an exceptional contribution in his/h
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.2cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Interests}
+
+\begin{itemize}
+	\item \textbf{Entertainment}: Football, Formula 1, Music, Movies, Games
+	\item \textbf{Technology}: Cryptocurrency, Distributed Ledger Technologies, FOSS
+\end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
 
 
 \end{document} 
