@@ -4,46 +4,70 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
 \usepackage{enumitem}
+\usepackage{xcolor}
+\definecolor{Mycolor2}{HTML}{3366CC}
 
+\usepackage{tikz}
+
+\newcommand{\ExternalLink}{%
+	\tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+		\begin{scope}[x=1ex, y=1ex]
+			\clip (-0.1,-0.1) 
+			--++ (-0, 1.2) 
+			--++ (0.6, 0) 
+			--++ (0, -0.6) 
+			--++ (0.6, 0) 
+			--++ (0, -1);
+			\path[draw, 
+			line width = 0.5, 
+			rounded corners=0.5] 
+			(0,0) rectangle (1,1);
+		\end{scope}
+		\path[draw, line width = 0.5] (0.5, 0.5) 
+		-- (1, 1);
+		\path[draw, line width = 0.5] (0.6, 1) 
+		-- (1, 1) -- (1, 0.6);
+	}
+}
 
 \begin{document}
 
 \begin{center}
-	{\LARGE\textbf{Ricardo Andrade}} \\
-	\vspace{0.2cm}	
+	{\LARGE\textbf{José Ricardo Andrade}} \\
+	\vspace{0.30cm}	
 	
 	\ \textbf{jrsa2012@gmail.com}
+	\vspace{0.22cm}	
 	
+	\ \textbf{\href{https://itsjrsa.github.io}{\color{Mycolor2}{Personal Website} \ExternalLink }}
 	
 	\vspace{0.2cm}	
 	
-		Porto~\textbullet 
-	\ Portugal
+	Porto~\textbullet \ Portugal
+	
+	\vspace{0.22cm}	
 
 \end{center}
 
 \begin{center}
-	%\vspace{0.2cm}
 	
-	\href{https://www.linkedin.com/in/jrsa2012}{\includegraphics[scale=0.06]{figs/linkedin_logo_label.png}}
-	\ \ \ \ \ \ \ \ \ \ \
-	\href{https://github.com/jrsa2012}{\includegraphics[scale=0.06]{figs/github_logo_label.png}}
+	\href{https://www.linkedin.com/in/itsjrsa}{\includegraphics[scale=0.055]{figs/linkedin_logo_label.png}}
+	\ \ \ \ \ \
+	\href{https://github.com/itsjrsa}{\includegraphics[scale=0.055]{figs/github_logo_label.png}}
 	
 \end{center}
 
 
 \section{Experience}
 
-%\vspace{0.1cm}
-
-\worksubsection{INESC TEC - Institute for Systems and Computer Engineering, Technology and Science}
-{Center of Power and Energy Systems (CPES) }
-{\textbullet~Research Assistant (grant) \hspace{0.38cm} @ \hspace{0.02cm} Energy Analytics and Forecasting Unit \hfill ~\textbf{\ July 2016 -- July 2018\ }}
-{\textbullet~Contracted Researcher \hspace{1cm}  @ \hspace{0.02cm} Energy Analytics and Forecasting Unit \hfill \textbf{ \ July 2018 -- Present\ }}
-
-
-
-\vspace{0.4cm}
+	\vspace{-0.1cm}
+	
+	\worksubsection{INESC TEC - Institute for Systems and Computer Engineering, Technology and Science}
+	{Centre for Power and Energy Systems (CPES) }
+	{\textbullet~Research Assistant (grant) \hspace{0.38cm} @ \hspace{0.02cm} Energy Analytics and Forecasting Unit \hfill ~\textbf{\ July 2016 -- July 2018\ }}
+	{\textbullet~Contracted Researcher \hspace{1cm}  @ \hspace{0.02cm} Energy Analytics and Forecasting Unit \hfill \textbf{ \ July 2018 -- Present\ }}	
+	
+	\vspace{0.4cm}
 
 \section{Key Skills}
 
@@ -66,7 +90,7 @@
 	
 		\item \textbf{Message Brokers/Event Streaming}: RabbitMQ, Apache Kafka
 	
-	\item \textbf{Virtualization}: Docker (containerization), Oracle VM VirtualBox
+	\item \textbf{Virtualization}: Docker, Oracle VM VirtualBox
 	
 	\item \textbf{OS}: macOS, Linux, Windows
 	
@@ -77,37 +101,139 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{0.05cm}
 
-\section{Awards and Honors}
 
-\datedsubsection{EEM2016 - COMPLATT - Energy Price Forecast Competition}{April 2016}
-
-
-International forecasting competition\footnote{\url{http://complatt.smartwatt.net/}}. Objective: predict the Iberian Electricity Market (MIBEL) hourly spot energy price up to 120 hours ahead. Daily submissions over a period of 14 days.
-
-
-\begin{myitemize}
-	\item Best model: Ensemble of feed-forward neural networks combined with feature engineering techniques
-	\item Final Classification: 4\textsuperscript{th} place (44 participants at final stage)
-\end{myitemize}
-
-\datedsubsection{INESC TEC BIP - "Fora de Série" / Limelight}{May 2017}
-
-Monthly award that honors collaborators for an exceptional contribution in his/her area of activity. More information available at BIP Bulletin INESC TEC~\footnote{\url{http://bip-archive.inesctec.pt/182/fora-de-serie.html}}.
-
-
-
+\section{Education}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\datedsubsection{FEUP - Faculdade de Engenharia da Universidade do Porto}{2010--2016}
+	
+	\textsc{M.Sc. Degree in Electrical and Computer Science Engineering}
+	
+	\textit{Specialization in Renewable Energy}
+	
+	\begin{myitemize}
+		%	\setlength\itemsep{0.05cm}
+		\item Dissertation: Previs\~{a}o de Variabilidade de Produ\c{c}\~{a}o em Centrais Fotovolt\'{a}icas~\footnote{\url{https://repositorio-aberto.up.pt/handle/10216/82786}}
+		\begin{myitemize}
+			\item Classification: 19 (in a scale of 1 to 20)
+		\end{myitemize}
+	\end{myitemize}
+	
+	\vspace{-0.2cm}
+	\datedsubsection{Academia de M\'{u}sica de S\~{a}o Jo\~{a}o da Madeira}{1998--2010}
+	
+	\textsc{Beginner - Advanced Musical Education \& Piano Classes}
+	\vspace{0.3cm}
+	
 \pagebreak
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 \vspace{0.3cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+
+\vspace{0.15cm}	
+
+\begin{myitemize}	
+		% ------
+	\item \textit{\textbf{ENERSHARE} - The Energy Data Space for Europe}
+	\begin{itemize}
+		\item \textbf{Task (1):} Integration of data-driven services in cross-sector data space.
+		\item \textbf{Task (2):} Development and integration of ENERSHARE Data Sharing/Barter Incentive Module.
+		\item \textbf{Technologies:} Python, PostgreSQL, Apache Cassandra, Django-REST Framework, International Data Spaces reference architecture components.
+	\end{itemize}
+	
+	
+	% ------
+	\item \textit{\textbf{InterConnect} - Interoperable Solutions Connecting Smart Homes, Buildings and Grids}
+	\begin{itemize}
+		\item \textbf{Task (1):} End-to-end implementation and demonstration of an interoperable data-driven IoT ecosystem to define tariff discounts for indirect control of EV charging.
+		\item \textbf{Task (2):} Integration of tools to forecast supermarkets cold storage flexibility.
+		\item \textbf{Technologies:} Python, PostgreSQL, Django-REST Framework, NGINX, SFTP, Docker.
+	\end{itemize}
+	
+	
+	% ------
+	\vspace{0.15cm}	
+	\item \textit{\textbf{AI4Substation (R\&D Contract)}} - E-REDES
+	\begin{itemize}
+		\item \textbf{Task:} Conceptualization and development of data-driven decision support system for E-REDES dispatch centre operators, based on SCADA eventlog data.
+		\item \textbf{Technologies:} Python, PostgreSQL, Flask, VueJS, Docker.
+	\end{itemize}
+	
+	% ------
+	\vspace{0.15cm}	
+	\item \textit{\textbf{GPDER - Grid Predictive Management Considering Distributed Energy Resources}}
+	\begin{itemize}
+		\item \textbf{Task:} Development of a forecasting platform for MV and LV distribution networks loads.
+		\item \textbf{Technologies:} Python, Apache Cassandra, NGINX, Flask, Apache Kafka, Docker.
+	\end{itemize}
+	
+	% ------
+	\vspace{0.15cm}	
+	\item \textit{\textbf{TSOLoadForecasting (R\&D Contract)}} - Austrian Power Grid (APG)
+	\begin{itemize}
+		\item \textbf{Task:} Research of statistical learning algorithms for load forecasting with  testbed on APG assets measurements data.
+		\item \textbf{Technologies:} Python, \LaTeX.
+	\end{itemize}
+	
+	% ------
+	\vspace{0.15cm}	
+	\item \textit{\textbf{InteGrid (EU H2020)} - INTElligent grid technologies for renewables INTEgration and INTEractive consumer participation enabling INTEroperable market solutions and INTErconnected stakeholders}
+	\begin{itemize}
+		\item \textbf{Task:} Development and integration of a forecasting platform for MV and LV distribution networks loads and MIBEL spot electricity prices;
+		\item \textbf{Technologies:} Python, Apache Cassandra, RabbitMQ, Celery, NGINX, Docker
+	\end{itemize}
+	
+	
+	% ------	
+	\vspace{0.15cm}	
+	\item \textit{\textbf{LPVAnalytics (R\&D Contract)}} - Elergone Energias, Lda.
+	\begin{itemize}
+		\item \textbf{Task:} Conceptualization, development and integration of an end-to-end forecasting platform for load and solar resources of Elergone Energias. System to be used by the market agent to define market offers on MIBEL.
+		\item \textbf{Technologies:} Python, VueJS, PostgreSQL(+TimescaleDB), NGINX, Docker.
+	\end{itemize}
+	
+	% ------
+	\vspace{0.15cm}	
+	\item \textit{\textbf{FEEdBACk (EU H2020)} - Fostering Energy Efficiency and BehAvioural Change through ICT}
+	\begin{itemize}
+		\item \textbf{Task:} Conceptualization and development of an end-to-end forecasting service for photovoltaic energy generation resources.
+		\item \textbf{Technologies:} Python, Flask, NGINX, Docker.
+	\end{itemize}
+	
+	% ------
+	\vspace{0.15cm}	
+	\item \textit{\textbf{SOLAR4DR (R\&D Contract)} - EFACEC}
+	\begin{itemize}
+		\item \textbf{Task:} Development of an end-to-end forecasting service for solar energy generation;
+		\item \textbf{Technologies:} Python, Flask, Apache HTTP Server, Docker;
+	\end{itemize}
+	
+	% ------
+	\vspace{0.15cm}	
+	\item \textit{\textbf{CORAL (N2020)} - Sustainable Ocean Exploitation: Tools and Sensors}
+	\begin{itemize}
+		\item \textbf{Task:} State of art research with regard to offshore energy conversion technologies and future hybrid systems opportunities. Development of a multi-temporal energy management tool (mixed-integer linear programming) - supported by forecasting models capable to define the best operational strategy for the energy storage/consumption of envisioned maritime exploratory processes
+		\item \textbf{Technologies:} Python, Flask
+	\end{itemize}
+	
+	
+\end{myitemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
 \section{Publications}
 
+\vspace{0.4cm}
 
 \subsection{Journals}
 
 \begin{enumerate}
+	
+	\item R.J. Bessa, F. Moaidi, J. Viana, J.R. Andrade, ”Uncertainty-aware procurement of flexibilities for electrical grid operational planning”, IEEE Transactions on Sustainable Energy, In Press, 2023
 	
 	\item J.R. Andrade, C. Rocha, R. Silva, J. P. Viana, R.J. Bessa, C. Gouveia, B. Almeida, R.J. Santos, M. Louro, P. M. Santos, A. F. Ribeiro, "Data-driven anomaly detection and event log profiling of SCADA alarms," IEEE Access, vol. 10, pp. 73758-73773, 2022.
 	
@@ -143,119 +269,6 @@ Monthly award that honors collaborators for an exceptional contribution in his/h
 \end{enumerate}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Projects}
-
-	\vspace{0.15cm}	
-
-\begin{myitemize}	
-
-% ------
-	\item \textit{\textbf{InterConnect} - Interoperable Solutions Connecting Smart Homes, Buildings and Grids}
-	\begin{itemize}
-		\item \textbf{Task:} Development and integration of tools to create mechanisms for indirect EV charging control (via new incentive models);
-		\item \textbf{Task:} Integration of tools to forecast supermarkets cold storage flexibility;
-		\item \textbf{Technologies:} Python, PostgreSQL, Django-REST Framework, NGINX, Docker
-	\end{itemize}
-
-
-% ------
-\vspace{0.30cm}	
-	\item \textit{\textbf{AI4Substation (R\&D Contract)}} - E-REDES
-	\begin{itemize}
-		\item \textbf{Task:} Conceptualization and development of data-driven decision support system for E-REDES dispatch centre operators, based on SCADA eventlog data;
-		\item \textbf{Technologies:} Python, PostgreSQL, Flask, VueJS, Docker
-	\end{itemize}
-
-% ------
-\newpage
-	\vspace{0.15cm}	
-	\item \textit{\textbf{GPDER - Grid Predictive Management Considering Distributed Energy Resources}}
-	\begin{itemize}
-		\item \textbf{Task:} Development of a forecasting platform for MV and LV distribution networks loads;
-		\item \textbf{Technologies:} Python, Apache Cassandra, NGINX, Flask, Apache Kafka, Docker
-	\end{itemize}
-
-% ------
-	\vspace{0.15cm}	
-	\item \textit{\textbf{TSOLoadForecasting (R\&D Contract)}} - Austrian Power Grid (APG)
-	\begin{itemize}
-		\item \textbf{Task:} Research of statistical learning algorithms for load forecasting with  testbed on APG assets measurements data.
-		\item \textbf{Technologies:} Python
-	\end{itemize}
-	
-% ------
-	\vspace{0.15cm}	
-	\item \textit{\textbf{InteGrid (EU H2020)} - INTElligent grid technologies for renewables INTEgration and INTEractive consumer participation enabling INTEroperable market solutions and INTErconnected stakeholders}
-	\begin{itemize}
-		\item \textbf{Task:} Development and integration of a forecasting platform for MV and LV distribution networks loads and MIBEL spot electricity prices;
-		\item \textbf{Technologies:} Python, Apache Cassandra, RabbitMQ, Celery, NGINX, Docker
-	\end{itemize}
-
-
-% ------	
-	\vspace{0.15cm}	
-	\item \textit{\textbf{LPVAnalytics (R\&D Contract)}} - Elergone Energias, Lda.
-	\begin{itemize}
-		\item \textbf{Task:} Conceptualization, development and integration of an end-to-end forecasting platform for load and solar resources of Elergone Energias. System to be used by the market agent to define market offers on MIBEL.
-		\item \textbf{Technologies:} Python, VueJS, PostgreSQL(+TimescaleDB), NGINX, Docker
-	\end{itemize}
-
-% ------
-	\vspace{0.15cm}	
-	\item \textit{\textbf{FEEdBACk (EU H2020)} - Fostering Energy Efficiency and BehAvioural Change through ICT}
-	\begin{itemize}
-		\item \textbf{Task:} Conceptualization and development of an end-to-end forecasting service for photovoltaic energy generation resources
-		\item \textbf{Technologies:} Python, Flask, NGINX, Docker
-	\end{itemize}
-	
-% ------
-	\vspace{0.15cm}	
-	\item \textit{\textbf{SOLAR4DR (R\&D Contract)} - EFACEC}
-	\begin{itemize}
-		\item \textbf{Task:} Development of an end-to-end forecasting service for solar energy generation
-		\item \textbf{Technologies:} Python, Flask, Apache HTTP Server, Docker
-	\end{itemize}
-		
-% ------
-	\vspace{0.15cm}	
-	\item \textit{\textbf{CORAL (N2020)} - Sustainable Ocean Exploitation: Tools and Sensors}
-	\begin{itemize}
-		\item \textbf{Task:} State of art research with regard to offshore energy conversion technologies and future hybrid systems opportunities. Development of a multi-temporal energy management tool (mixed-integer linear programming) - supported by forecasting models capable to define the best operational strategy for the energy storage/consumption of envisioned maritime exploratory processes
-		\item \textbf{Technologies:} Python, Flask
-	\end{itemize}
-
-		
-\end{myitemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\vspace{-0.2cm}
-
-\section{Education}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\datedsubsection{FEUP - Faculdade de Engenharia da Universidade do Porto}{2010--2016}
-
-\textsc{M.Sc. Degree in Electrical and Computer Science Engineering}
-
-\textit{Specialization in Renewable Energy}
-
-\begin{myitemize}
-%	\setlength\itemsep{0.05cm}
-	\item Dissertation: Previs\~{a}o de Variabilidade de Produ\c{c}\~{a}o em Centrais Fotovolt\'{a}icas~\footnote{\url{https://repositorio-aberto.up.pt/handle/10216/82786}}
-	\begin{myitemize}
-		\item Classification: 19 (in a scale of 1 to 20)
-	\end{myitemize}
-\end{myitemize}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{-0.2cm}
-\datedsubsection{Academia de M\'{u}sica de S\~{a}o Jo\~{a}o da Madeira}{1998--2010}
-
-\textsc{Beginner - Advanced Musical Education \& Piano Classes}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -264,7 +277,7 @@ Monthly award that honors collaborators for an exceptional contribution in his/h
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Interests \& Hobbies}
 
-Football, formula 1, music, movies, photography, games, podcasts, cryptocurrencies
+Football, formula 1, music, movies, photography, games, podcasts, cryptocurrencies.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
